@@ -5,3 +5,8 @@
 .parallax-container a:hover {
     color: black;
 }
+
+.icon-link:hover {
+    -webkit-filter: drop-shadow(10px 10px 10px #808080);
+    filter: drop-shadow(10px 10px 10px #808080); 
+}
