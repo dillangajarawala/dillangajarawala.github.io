@@ -10,3 +10,11 @@
     -webkit-filter: drop-shadow(10px 10px 10px #808080);
     filter: drop-shadow(10px 10px 10px #808080); 
 }
+
+#footer-links a {
+    color: black;
+}
+
+#footer-links a:hover {
+    color: gray;
+}
