@@ -18,3 +18,11 @@
 #footer-links a:hover {
     color: gray;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+#skills-img {
+    height: 700px;
+}
