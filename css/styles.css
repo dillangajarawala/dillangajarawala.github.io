@@ -19,10 +19,18 @@
     color: gray;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 #skills-img {
     height: 700px;
+}
+
+#hobbies-img {
+    height: 600px;
+}
+
+#education .card .card-action a {
+    color: black;
+}
+
+#education .card .card-action a:hover {
+    color: #808080;
 }
