@@ -35,6 +35,14 @@
     color: #808080;
 }
 
-#relevant-coursework {
+.ordered-list {
     list-style-type: circle;
+}
+
+#work-experience .card .card-action a {
+    color: black;
+}
+
+#work-experience .card .card-action a:hover {
+    color: #808080;
 }
