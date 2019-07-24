@@ -7,8 +7,9 @@
 }
 
 .icon-link:hover {
-    -webkit-filter: drop-shadow(10px 10px 10px #808080);
-    filter: drop-shadow(10px 10px 10px #808080); 
+    opacity: 0.5;
+    /* -webkit-filter: drop-shadow(10px 10px 10px #808080); */
+    /* filter: drop-shadow(10px 10px 10px #808080);  */
 }
 
 #footer-links a {
