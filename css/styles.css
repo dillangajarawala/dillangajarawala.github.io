@@ -46,3 +46,15 @@
 #work-experience .card .card-action a:hover {
     color: #808080;
 }
+
+#projects .card .card-action a {
+    color: black;
+}
+
+#projects .card .card-action a:hover {
+    color: #808080;
+}
+
+/* #baking-factory {
+    height: 300px;
+} */
