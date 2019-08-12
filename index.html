@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!--Import materialize.css-->
     <!-- <link type="text/css" rel="stylesheet" href="css/materialize.css" /> -->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" />
     <link type="text/css" rel="stylesheet" href="css/styles.css" />
   </head>
 
@@ -18,12 +18,17 @@
       <nav class="row transparent z-depth-0">
         <div class="col s2 offset-s1">
           <a href="#" class="brand-logo">Dillan Gajarawala</a>
+          <a data-target="mobile-nav" class="sidenav-trigger" href="mobile-nav"><i class="material-icons">menu</i></a>
         </div>
-        <ul id="nav-mobile" class="col s2 right hide-on-med-and-down offset-s2">
+        <ul id="navbar" class="col s2 right hide-on-med-and-down offset-s2">
           <li><a href="about.html">About Me</a></li>
           <li><a href="work.html">My Work</a></li>
         </ul>
       </nav>
+      <ul class="sidenav" id="mobile-nav">
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="work.html">My Work</a></li>
+      </ul>
       <div class="parallax"><img src="images/nycimage.jpg"></div>
     </div>
     <div class="section white">
@@ -72,6 +77,6 @@
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- <script type="text/javascript" src="js/materialize.js"></script> -->
-  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
 </html>
