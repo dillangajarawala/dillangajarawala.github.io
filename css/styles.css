@@ -59,3 +59,14 @@
 /* #baking-factory {
     height: 300px;
 } */
+
+@media only screen and (max-device-width: 480px) {
+    .btn {
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+
+    .sidenav-trigger-footer {
+        color: black;
+    }
+}

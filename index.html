@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
     <meta name="author" content="Dillan Gajarawala" />
     <meta name="description" content="My Personal Website" />
     <title>Dillan Gajarawala</title>
@@ -14,10 +15,11 @@
   </head>
 
   <body>
-    <div class="parallax-container" id="top">
+    <div class="parallax-container id="top">
       <nav class="row transparent z-depth-0">
         <div class="col s2 offset-s1">
-          <a href="#" class="brand-logo">Dillan Gajarawala</a>
+          <a href="#" class="brand-logo hide-on-med-and-down">Dillan Gajarawala</a>
+          <a href="#" class="brand-logo center hide-on-large-only">Dillan Gajarawala</a>
           <a data-target="mobile-nav" class="sidenav-trigger" href="mobile-nav"><i class="material-icons">menu</i></a>
         </div>
         <ul id="navbar" class="col s2 right hide-on-med-and-down offset-s2">
@@ -29,7 +31,7 @@
         <li><a href="about.html">About Me</a></li>
         <li><a href="work.html">My Work</a></li>
       </ul>
-      <div class="parallax"><img src="images/nycimage.jpg"></div>
+      <div class="parallax"><img id="nyc1" src="images/nycimage.jpg"></div>
     </div>
     <div class="section white">
       <div class="row container">
@@ -50,10 +52,17 @@
       <div class="container">
         <div class="row">
           <div class="center col s8 offset-s2">
+            <a data-target="mobile-footer-menu" class="sidenav-trigger-footer hide-on-large-only" href="mobile-footer-menu"><i class="material-icons">menu</i></a>
+            <ul class="hide-on-med-and-down">
               <a href="https://www.linkedin.com/in/dillan-g-544214125/" target="_blank"><img class="icon-link" src="images/linkedin.png"></a> &nbsp;&nbsp;&nbsp;
               <a href="mailto:dillan.gajarawala@gmail.com"><img class="icon-link" src="images/email.png"></a> &nbsp;&nbsp;&nbsp;
               <a href="assets/DillanGResume.pdf" target="_blank"><img class="icon-link" src="images/resume.png"></a> &nbsp;&nbsp;&nbsp;
               <a href="https://github.com/dillangajarawala" target="_blank"><img class="icon-link" src="images/github.png"></a>
+            </ul>
+            <ul class="sidenav" id="mobile-footer-menu">
+              <li><a href="about.html">About Me</a></li>
+              <li><a href="work.html">My Work</a></li>
+            </ul>
           </div>
         </div>
         <div class="row" id="footer-links">
