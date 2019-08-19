@@ -45,3 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var elems = document.querySelectorAll('.sidenav');
   var instances = M.Sidenav.init(elems, {});
 });
+
+function showEmail() {
+  alert("\t\t\t\tMy email is dillan.gajarawala@gmail.com")
+}

@@ -66,7 +66,11 @@
         box-shadow: none !important;
     }
 
-    .sidenav-trigger-footer {
+    footer .sidenav-trigger {
         color: black;
+    }
+
+    nav .brand-logo {
+        font-size: 1.8rem;
     }
 }
