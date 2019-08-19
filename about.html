@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0;">
     <meta name="author" content="Dillan Gajarawala" />
     <meta name="description" content="My Personal Website" />
     <title>About Dillan Gajarawala</title>
@@ -17,13 +18,19 @@
     <div class="parallax-container" id="top">
       <nav class="row transparent z-depth-0">
         <div class="col s2 offset-s1">
-          <a href="index.html" class="brand-logo">Dillan Gajarawala</a>
+            <a href="index.html" class="brand-logo hide-on-med-and-down">Dillan Gajarawala</a>
+            <a href="index.html" class="brand-logo center hide-on-large-only">Dillan Gajarawala</a>
+          <a data-target="mobile-nav" class="sidenav-trigger" href="mobile-nav"><i class="material-icons">menu</i></a>
         </div>
-        <ul id="nav-mobile" class="col s2 right hide-on-med-and-down offset-s2">
+        <ul id="navbar" class="col s3 right hide-on-med-and-down offset-s2">
           <li class="active"><a href="#">About Me</a></li>
           <li><a href="work.html">My Work</a></li>
         </ul>
       </nav>
+      <ul class="sidenav" id="mobile-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">My Work</a></li>
+      </ul>
       <div class="parallax"><img src="images/cmuimage1.jpg"></div>
     </div>
     <div class="section white">
@@ -47,7 +54,7 @@
       <div class="container">
         <h3 class="center header">Education</h3>
         <div class="row">
-          <div class="col s4 offset-s2">
+          <div class="col l4 offset-l2 m4 offset-m2 s6">
             <div class="card hoverable">
               <div class="card-image">
                 <a class="modal-trigger" data-target="modal1" href=""><img src="images/cmu logo.png"></a>
@@ -82,7 +89,7 @@
               </div>
             </div>
           </div>
-          <div class="col s4">
+          <div class="col l4 m4 offset-m2 s6">
             <div class="card hoverable">
               <div class="card-image">
                   <a class="modal-trigger" data-target="modal2" href=""><img src="images/westminster.jpg"></a>
@@ -113,7 +120,7 @@
       <div class="parallax"><img src="images/skills.png"></div>
     </div>
     <div class="section white" id="skills">
-      <div class="container">
+      <div class="container hide-on-med-and-down">
         <h3 class="center header">Skills</h3>
         <div class="row">
           <div class="col s4">
@@ -247,18 +254,125 @@
             </div>
           </div>
       </div>
+      <div class="container hide-on-large-only">
+        <h3 class="center header">Skills</h3>
+        <div class="row">
+          <ul class="collapsible">
+              <li>
+                <div class="collapsible-header"><i class="material-icons">settings</i>Frameworks</div>
+                <div class="collapsible-body">
+                  <span>
+                    <ul class='center'>
+                        <li>Ruby on Rails</li>
+                        <li>Express.js</li>
+                        <li>TypeScript</li>
+                    </ul>
+      
+                    <p class='center'>I used Ruby on Rails in my Application Development project, and I used Express.js and TypeScript in my summer 2019 Internship!</p>
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">code</i>Programming</div>
+                <div class="collapsible-body">
+                  <span>
+                    <ul class="center">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>Ruby</li>
+                    </ul>
+      
+                    <p class="center">I've been using Python since I started college, whether it be in my intro programming class, making some of my own small scripts, or most recently, in my summer 2019 Internship.
+                      I worked with Java in high school CS and in my data structures class. Ruby, I used in my Application Development class along with Rails.
+                    </p>
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">http</i>Web Development</div>
+                <div class="collapsible-body">
+                  <span>
+                    <ul class="center">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+      
+                    <p class="center">Over time, I have been improving my web development skills to the point where I could make this website. In my freshman year IS class,
+                        I made a few websites with HTML/CSS and JavaScript that modeled real-life companies.
+                    </p>
+                  </span>
+                </div>
+              </li>
+              <li>
+                  <div class="collapsible-header"><i class="material-icons">storage</i>Database</div>
+                  <div class="collapsible-body">
+                    <span>
+                      <ul class="center">
+                          <li>SQL</li>
+                          <li>PostgreSQL</li>
+                          <li>MongoDB</li>
+                      </ul>
+      
+                      <p class="center">I learned SQL in my freshman IS class, but really got into it along with Postgres in my Database Development class. I've used MongoDB
+                          extensively, whether it be in my term project for my intro programming class, or in my summer 2019 Internship.
+                      </p>
+                    </span>
+                  </div>
+              </li>
+              <li>
+                  <div class="collapsible-header"><i class="material-icons">desktop_mac</i>Technologies</div>
+                  <div class="collapsible-body">
+                    <span>
+                      <ul class="center">
+                          <li>Tableau</li>
+                          <li>Git</li>
+                          <li>Node.js</li>
+                      </ul>
+      
+                      <p class="center">I learned Tableau at a session in freshman year, and since have been using it for some personal analyses. Git, is just everything,
+                          so no information really needed there. With regards to Node.js, I learned it over time at my summer 2019 Internship.
+                      </p>
+                    </span>
+                  </div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">language</i>Languages</div>
+                <div class="collapsible-body">
+                  <span>
+                    <ul class="center">
+                        <li>Spanish</li>
+                    </ul>
+                    <p class="center">I learned Spanish from 2nd grade until senior year of high school. I've even used it in practice, having visited multiple Latin American countries,
+                        such as Costa Rica, Guatemala, and Peru.
+                    </p>
+                  </span>
+                </div>
+              </li>
+            </ul>
+        </div>
+      </div>
     </div>
     <footer class="grey lighten-3 page-footer">
         <div class="container">
           <div class="row">
-            <div class="center col s8 offset-s2">
-                <a href="https://www.linkedin.com/in/dillan-g-544214125/" target="_blank"><img class="icon-link" src="images/linkedin.png"></a> &nbsp;&nbsp;&nbsp;
-                <a href="mailto:dillan.gajarawala@gmail.com"><img class="icon-link" src="images/email.png"></a> &nbsp;&nbsp;&nbsp;
-                <a href="assets/DillanGResume.pdf" target="_blank"><img class="icon-link" src="images/resume.png"></a> &nbsp;&nbsp;&nbsp;
-                <a href="https://github.com/dillangajarawala" target="_blank"><img class="icon-link" src="images/github.png"></a>
+              <div class="center col s8 offset-s2">
+                <a data-target="mobile-footer-menu" class="sidenav-trigger hide-on-large-only black-text" href="mobile-footer-menu">Contact Me</a>
+                <div class="hide-on-med-and-down">
+                  <a href="https://www.linkedin.com/in/dillan-g-544214125/" target="_blank"><img class="icon-link" src="images/linkedin.png"></a> &nbsp;&nbsp;&nbsp;
+                  <a href="mailto:dillan.gajarawala@gmail.com"><img class="icon-link" src="images/email.png"></a> &nbsp;&nbsp;&nbsp;
+                  <a href="assets/DillanGResume.pdf" target="_blank"><img class="icon-link" src="images/resume.png"></a> &nbsp;&nbsp;&nbsp;
+                  <a href="https://github.com/dillangajarawala" target="_blank"><img class="icon-link" src="images/github.png"></a>
+                </div>
+                <ul class="sidenav" id="mobile-footer-menu">
+                  <li><a href="https://www.linkedin.com/in/dillan-g-544214125/" target="_blank">Linkedin</a></li>
+                  <li><a onclick=showEmail()>Email</a></li>
+                  <li><a href="assets/DillanGResume.pdf" target="_blank">Resume</a></li>
+                  <li><a href="https://github.com/dillangajarawala" target="_blank">Github</a></li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="row" id="footer-links">
+          <div class="row hide-on-med-and-down" id="footer-links">
             <div class="col s2 offset-s3 center">
               <a href="index.html">Home</a>
             </div>

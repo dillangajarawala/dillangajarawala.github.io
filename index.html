@@ -2,29 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0;">
     <meta name="author" content="Dillan Gajarawala" />
     <meta name="description" content="My Personal Website" />
     <title>Dillan Gajarawala</title>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!--Import materialize.css-->
-    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.css" /> -->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.css" /> -->
     <link type="text/css" rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-    <div class="parallax-container" id="top">
+    <div class="parallax-container id="top">
       <nav class="row transparent z-depth-0">
         <div class="col s2 offset-s1">
-          <a href="#" class="brand-logo">Dillan Gajarawala</a>
+          <a href="#" class="brand-logo hide-on-med-and-down">Dillan Gajarawala</a>
+          <a href="#" class="brand-logo center hide-on-large-only">Dillan Gajarawala</a>
+          <a data-target="mobile-nav" class="sidenav-trigger" href="mobile-nav"><i class="material-icons">menu</i></a>
         </div>
-        <ul id="nav-mobile" class="col s2 right hide-on-med-and-down offset-s2">
+        <ul id="navbar" class="col s3 right hide-on-med-and-down offset-s2">
           <li><a href="about.html">About Me</a></li>
           <li><a href="work.html">My Work</a></li>
         </ul>
       </nav>
-      <div class="parallax"><img src="images/nycimage.jpg"></div>
+      <ul class="sidenav" id="mobile-nav">
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="work.html">My Work</a></li>
+      </ul>
+      <div class="parallax"><img id="nyc1" src="images/nycimage.jpg"></div>
     </div>
     <div class="section white">
       <div class="row container">
@@ -45,13 +52,22 @@
       <div class="container">
         <div class="row">
           <div class="center col s8 offset-s2">
+            <a data-target="mobile-footer-menu" class="sidenav-trigger hide-on-large-only black-text" href="mobile-footer-menu">Contact Me</a>
+            <div class="hide-on-med-and-down">
               <a href="https://www.linkedin.com/in/dillan-g-544214125/" target="_blank"><img class="icon-link" src="images/linkedin.png"></a> &nbsp;&nbsp;&nbsp;
               <a href="mailto:dillan.gajarawala@gmail.com"><img class="icon-link" src="images/email.png"></a> &nbsp;&nbsp;&nbsp;
               <a href="assets/DillanGResume.pdf" target="_blank"><img class="icon-link" src="images/resume.png"></a> &nbsp;&nbsp;&nbsp;
               <a href="https://github.com/dillangajarawala" target="_blank"><img class="icon-link" src="images/github.png"></a>
+            </div>
+            <ul class="sidenav" id="mobile-footer-menu">
+              <li><a href="https://www.linkedin.com/in/dillan-g-544214125/" target="_blank">Linkedin</a></li>
+              <li><a onclick=showEmail()>Email</a></li>
+              <li><a href="assets/DillanGResume.pdf" target="_blank">Resume</a></li>
+              <li><a href="https://github.com/dillangajarawala" target="_blank">Github</a></li>
+            </ul>
           </div>
         </div>
-        <div class="row" id="footer-links">
+        <div class="row hide-on-med-and-down" id="footer-links">
           <div class="col s2 offset-s3 center">
             <a href="#top">Home</a>
           </div>
@@ -71,7 +87,7 @@
     </footer>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <!-- <script type="text/javascript" src="js/materialize.js"></script> -->
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!-- <script type="text/javascript" src="js/materialize.js"></script> -->
   <script type="text/javascript" src="js/scripts.js"></script>
 </html>
