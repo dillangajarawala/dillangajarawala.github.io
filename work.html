@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0;">
     <meta name="author" content="Dillan Gajarawala" />
     <meta name="description" content="My Personal Website" />
     <title>Dillan Gajarawala's Work and Project Experience</title>
@@ -231,14 +231,23 @@
     <footer class="grey lighten-3 page-footer">
       <div class="container">
         <div class="row">
-          <div class="center col s8 offset-s2">
-              <a href="https://www.linkedin.com/in/dillan-g-544214125/" target="_blank"><img class="icon-link" src="images/linkedin.png"></a> &nbsp;&nbsp;&nbsp;
-              <a href="mailto:dillan.gajarawala@gmail.com"><img class="icon-link" src="images/email.png"></a> &nbsp;&nbsp;&nbsp;
-              <a href="assets/DillanGResume.pdf" target="_blank"><img class="icon-link" src="images/resume.png"></a> &nbsp;&nbsp;&nbsp;
-              <a href="https://github.com/dillangajarawala" target="_blank"><img class="icon-link" src="images/github.png"></a>
+            <div class="center col s8 offset-s2">
+              <a data-target="mobile-footer-menu" class="sidenav-trigger hide-on-large-only" href="mobile-footer-menu">Contact Me</a>
+              <div class="hide-on-med-and-down">
+                <a href="https://www.linkedin.com/in/dillan-g-544214125/" target="_blank"><img class="icon-link" src="images/linkedin.png"></a> &nbsp;&nbsp;&nbsp;
+                <a href="mailto:dillan.gajarawala@gmail.com"><img class="icon-link" src="images/email.png"></a> &nbsp;&nbsp;&nbsp;
+                <a href="assets/DillanGResume.pdf" target="_blank"><img class="icon-link" src="images/resume.png"></a> &nbsp;&nbsp;&nbsp;
+                <a href="https://github.com/dillangajarawala" target="_blank"><img class="icon-link" src="images/github.png"></a>
+              </div>
+              <ul class="sidenav" id="mobile-footer-menu">
+                <li><a href="https://www.linkedin.com/in/dillan-g-544214125/" target="_blank">Linkedin</a></li>
+                <li><a onclick=showEmail()>Email</a></li>
+                <li><a href="assets/DillanGResume.pdf" target="_blank">Resume</a></li>
+                <li><a href="https://github.com/dillangajarawala" target="_blank">Github</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="row" id="footer-links">
+        <div class="row hide-on-med-and-down" id="footer-links">
           <div class="col s2 offset-s3 center">
             <a href="index.html">Home</a>
           </div>
