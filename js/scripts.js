@@ -49,3 +49,8 @@ document.addEventListener('DOMContentLoaded', function() {
 function showEmail() {
   alert("\t\t\t\tMy email is dillan.gajarawala@gmail.com")
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.collapsible');
+  var instances = M.Collapsible.init(elems, {});
+});
