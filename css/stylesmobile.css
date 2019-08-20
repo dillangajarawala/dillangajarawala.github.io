@@ -1,0 +1,22 @@
+@media only screen and (max-device-width: 480px) {
+    .btn {
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+
+    nav .brand-logo {
+        font-size: 1.5rem;
+    }
+
+    .parallax-img {
+        max-width: 100%;
+    }
+
+    .parallax-container {
+        height: 250px;
+    }
+
+    #tepper {
+        height: 250px;
+    }
+}
