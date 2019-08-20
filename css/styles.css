@@ -59,23 +59,3 @@
 .collapsible-body {
     font-size: 150%;
 }
-
-/* #baking-factory {
-    height: 300px;
-} */
-
-@media only screen and (max-device-width: 480px) {
-    .btn {
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-    }
-
-    nav .brand-logo {
-        font-size: 1.5rem;
-    }
-
-    .skills-mobile-img {
-        height: 50px;
-        width: 50px;
-    }
-}
