@@ -58,3 +58,15 @@ document.addEventListener('DOMContentLoaded', function() {
 $(document).ready(function () {
   document.getElementById('footer-year').innerHTML = new Date().getFullYear();
 })
+
+var i = 0;
+var txt = "Hi. I'm Dillan Gajarawala.";
+var speed = 100;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("typed-effect").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
